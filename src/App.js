@@ -2,8 +2,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Setando Projeto</h1>
+    <div className="container">
+      <input className="input" placeholder="digite seu link..."/>
     </div>
   );
 }
