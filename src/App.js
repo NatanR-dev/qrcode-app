@@ -5,12 +5,16 @@ import './App.css';
 function App() {
    const [link, setLink] = useState('') 
 
+   function handleQrcode(e){
+    setLink(e.target.value);
+   }
+
   return (
     <div className="container">
-      {/* example inset www.google.com on value */}
+      
       <QRCode value={link}/>
 
-      <input className="input" placeholder="digite seu link..."/>
+      <input className="input" placeholder="digite seu link..." value={link} onChange={ (e) => handleQrcode(e) }/>
     </div>
   );
 }
